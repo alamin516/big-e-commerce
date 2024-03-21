@@ -1,0 +1,254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #f5f5f5;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Home Page Banner */
+
+.slick-dots {
+  bottom: 20px !important;
+}
+
+.slick-next {
+  right: 4px !important;
+}
+
+.slick-prev {
+  left: 4px !important;
+  z-index: 9 !important;
+}
+
+.uspas-items img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Home Page Categories */
+.hop-category-item:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  -webkit-transform: all 0.3s ease-in-out;
+  -ms-transform: all 0.3s ease-in-out;
+  transform: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.hop-category-item {
+  height: 148.5px;
+  border-right: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.categories-item:nth-child(9),
+.categories-item:nth-child(10),
+.categories-item:nth-child(11),
+.categories-item:nth-child(12),
+.categories-item:nth-child(13),
+.categories-item:nth-child(14),
+.categories-item:nth-child(15),
+.categories-item:nth-child(16) {
+  border-bottom: 0px;
+}
+
+.categories-item:nth-child(8),
+.categories-item:nth-child(16) {
+  border-right: 0px !important;
+}
+
+/* Home Page Products */
+
+.hop-product-card {
+  background: #ffffff;
+}
+
+.hop-product-card:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  -webkit-transform: all 0.3s ease-in-out;
+  -ms-transform: all 0.3s ease-in-out;
+  transform: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.hop-product-title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.hop-price-first-line {
+  line-height: 22px;
+  height: 22px;
+  font-size: 18px;
+  color: #f85606;
+}
+
+.hop-price-second-line {
+  margin-top: 4px;
+  margin-right: 4px;
+  line-height: 14px;
+  height: 14px;
+  color: #9e9e9e;
+  font-size: 12px;
+}
+
+.hop-price-second-line .hop-price-text {
+  text-decoration: line-through;
+}
+
+.hop-price-second-line .hop-discount {
+  color: #212121;
+  opacity: 0.8;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.card-jfy-footer {
+  margin-top: 8px;
+  height: 14px;
+  clear: both;
+}
+
+.card-jfy-ratings {
+  position: relative;
+  float: left;
+  margin-right: 2px;
+  margin-bottom: 3px;
+  display: block;
+  height: 11px;
+  line-height: 11px;
+}
+
+.card-jfy-rating-layer {
+  display: inline-block;
+}
+.card-jfy-rating-layer.top-layer {
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.card-jfy-rating-layer .rating {
+  font-size: 11px;
+  line-height: 11px;
+  height: 11px;
+  margin-right: -3px;
+}
+
+.card-jfy-rating-layer .rating:before {
+  font-size: 11px;
+  color: #dadada;
+}
+
+.lazada-ic-Star0:before {
+  content: "\e77e";
+}
+
+.card-jfy-ratings-comment {
+  float: left;
+  font-size: 12px;
+  color: #9e9e9e;
+}
+
+.hop-card-load-more {
+  padding-top: 20px;
+  padding-bottom: 9px;
+  clear: both;
+}
+
+.hop-card-load-more button {
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  display: block;
+  min-width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #f85606;
+  border: 1px solid #f85606;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Single Product Page */
+.pdp-product-price {
+  display: inline-block;
+  padding: 16px 0 17px;
+}
+
+.pdp-price_color_orange {
+  color: #f85606;
+}
+
+.pdp-price_size_xl {
+  font-size: 30px;
+}
+
+.pdp-price_size_xs {
+  font-size: 14px;
+}
+
+.pdp-price_color_lightgray {
+  color: #9e9e9e;
+}
+
+.pdp-price_type_deleted {
+  text-decoration: line-through;
+}
+
+.pdp-product-price__discount {
+  font-size: 14px;
+  color: #212121;
+  margin-left: 6px;
+}
+
+.no-spinners::-webkit-inner-spin-button,
+.no-spinners::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-spinners {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.pdp-reviews .rating-tag-text:after {
+  content: " ";
+  position: absolute;
+  right: -10px;
+  width: 0;
+  height: 0;
+  border-top: 20px solid #ffc700;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+
+.size-option {
+  /* Default button styles */
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #cccccc;
+  padding: 2px 8px;
+  cursor: pointer;
+}
+
+.size-option.active {
+  background-color: #f85606;
+  color: #ffffff;
+  border-color: #f85606;
+}
